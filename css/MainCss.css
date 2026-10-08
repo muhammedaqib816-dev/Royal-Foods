@@ -1,0 +1,106 @@
+   *{
+        
+        box-sizing: border-box;
+      }
+        .Itm1{
+            animation-name: N1;
+            border-radius: 10px 30px 70px 100px;
+            
+            
+        }
+        .Itm1 img{
+           
+            width: 100%;
+        }
+        .Itm1{
+            border: 2px solid #fff;
+            transition: 0.4s ease-in-out;
+            cursor: pointer;
+            overflow: hidden;
+        }
+        .Itm1 img{
+            transition: 0.4s ease-in-out;
+        }
+        .Itm1 img:hover{
+            transform: scale(1.2) rotate(5deg);
+        }
+        .Itm1 button {
+          width: 100px;
+          box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+          transform: translateX(-50%);
+          background-color: rgba(0, 0, 0, 0.7);
+          color: white;
+          border: none;
+          border-radius: 5px;
+}
+
+          .Itm1 button:hover {
+              background-color: rgba(255, 0, 0, 0.7);
+  }
+  
+  .items {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid #ffff;
+   
+}
+  .items img {
+    width: 100%;
+    height: 100%;
+    transition: 0.4s ease-in-out;
+   
+    cursor: pointer;
+}
+.Itm2 img:hover {
+  transform: scale(1.1) rotate(2deg);
+}
+.Itm2 {
+  margin-top: 4%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  border-radius: 25px;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.Itm2 p {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0%;
+  margin-top: 2%;
+  cursor: pointer;
+}
+  .row1 {
+    animation: N1 2s cubic-bezier(0.445, 0.050, 0.550, 0.950) both;
+}
+.row1{
+  box-shadow: 0px 4px 4px lightgray;
+}
+.row2{
+  box-shadow: 0px -5px 4px lightgray;
+ 
+}
+.row3{
+  box-shadow: 0px -5px 4px lightgray;
+ 
+}
+
+@keyframes N1 {
+    0% {
+        transform: translateZ(-1400px) translateY(800px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateZ(0) translateY(0);
+        opacity: 1
+    }
+}
+.row2 ul li a{
+  text-decoration: none;
+  color: black;
+}
+.row2 img{width: 50%;}
+.row2 ul li a:hover{color: red;}
+i{color: black;font-size: x-large;}
+i:hover{color: gray;}

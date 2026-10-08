@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Foods</title>
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+    <script src="js\bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css\MainCss.css">
+    <style>
+    .card{
+        width: 300px;
+        animation-name: N1;
+    }
+    .row {
+    animation: N1 2s cubic-bezier(0.445, 0.050, 0.550, 0.950) both;
+}
+    @keyframes N1 {
+    0% {
+        transform: translateZ(-1400px) translateY(800px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateZ(0) translateY(0);
+        opacity: 1
+    }
+}
+
+
+    </style>
+</head>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-black">
+    <div class="container-fluid">
+        <a class="navbar-brand  col-md-2" href="Home.html"><img src="Images\1.png" alt="" width="
+          100px"><p style="font-size: small;">Food Happiness Start <br> Here.....</p></a>
+          <button type="button" class="btn hello fa-solid fa-sign-in btn-danger" data-bs-toggle="modal" data-bs-target="#myModal"></button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav m-auto ml-20%">
+                <li class="nav-item">
+                    <a class="nav-link" href="Break-Fast.html">Break-Fast</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Lunch.htm">Lunch</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Dinner.html">Dinner</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Drinks.html">Drinks</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="text" placeholder="Search">
+                <button class="btn fa fa-search" type="button"></button>
+            </form>
+
+        </div>
+    </div>
+</nav>
+      
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content bg-secondary  border border-2">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+
+        <h4 class="modal-title" style="font-weight: bold;font-size: 30px ;background: linear-gradient(90deg,red,white);-webkit-background-clip: text;background-clip: text;-webkit-text-fill-color: transparent;text-align: center;margin-top: 20px;
+        ">To Buy Our Food You Must Be Login </h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="container mt-3">
+          <h2 style="background: linear-gradient(90deg,blue,white);-webkit-background-clip: text;background-clip: text;-webkit-text-fill-color: transparent;"><img src="Images\1.png" alt="" width="80px" height="40px" style="margin-bottom: 10px;font-size:medium ;">Login Here</h2>
+          <form action="/action_page.php">
+            <div class="mb-3 mt-3">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+            <div class="mb-3">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+            </div>
+            <div class="form-check mb-3">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="remember" ><p style="color: white;"> Remember me</p>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Images\5.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+             
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Images\6.webp" class="d-block w-100" alt="..." >
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Delicious Food Delivered Hot & Fresh</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsa, quisquam ullam laboriosam illo deleniti.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Images\6.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Choose Your Favourite Drinks.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsa, quisquam ullam laboriosam illo deleniti.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+ </div>
+ 
+  <div class="container-fluid">
+    <h1 style="font-weight: bold;font-size: 40px ;background: linear-gradient(90deg,red,white);-webkit-background-clip: text;background-clip: text;-webkit-text-fill-color: transparent;text-align: center;margin-top: 20px;">Food Solution</h1>
+    <div class="row d-flex  flex-wrap justify-content-around">
+        <div class="card mt-5 p-3 m-2 col-xxl-2 col-xl-3 col-lg-5 col-md-5 col-sm-12">
+            <img src="Images\14.jpg" alt="">
+            <h5 style="text-align: center;">Our Difference</h5>
+            <p style="text-align: center;">Our Food Solutions Division has evolved around helping our customers in the Food Service market solve the challenges around kitchen profitability, rising consumer food expectations and maintaining their competitive advantage.</p>
+            <button class="btn btn-primary">Discover More</button>
+        </div>
+        <div class="card mt-5 p-3 m-2 col-xxl-2 col-xl-3 col-lg-5 col-md-5 col-sm-12">
+            <img src="Images\15.jpg" alt="">
+            <h5 style="text-align: center;">Our Customers</h5>
+            <p style="text-align: center;">Our strategy is to focus on a smaller number of customers and offer them a very high level of service. We develop relationships and work together to improve their business. Our customer base is diverse and includes five star hotels, stadiums.</p>
+            <button class="btn btn-primary">Discover More</button>
+        </div>
+        <div class="card mt-5 p-3 m-2 col-xxl-2 col-xl-3 col-lg-5 col-md-5 col-sm-12">
+            <img src="Images\16.jpg" alt="">
+            <h5 style="text-align: center;">Our Service</h5>
+            <p style="text-align: center;">We have state-based Customer Service Teams operating from our  Perth and Brisbane facilities, who can be contacted by phone or email for product advice and delivery enquiries.We also supply product through purchasing platforms.</p>
+            <button class="btn btn-primary">Discover More</button>
+        </div>
+        <div class="card mt-5 p-3 m-2 col-xxl-2 col-xl-3 col-lg-5 col-md-5 col-sm-12">
+            <img src="Images\4.png" alt="">
+            <h5 style="text-align: center;">Our Partners</h5>
+            <p style="text-align: center;">Our R&D team of experienced chefs partner with the best manufacturers in the world to produce our range of premium, value-added products.We also exclusively represent a select range of premium brands including ice cream and Chobani yoghurt.</p>
+            <button class="btn btn-primary">Discover More</button>
+        </div>
+        <div class="card mt-5 p-3 m-2 col-xxl-2 col-xl-3 col-lg-5 col-md-5 col-sm-12">
+            <img src="Images\5.png" alt="">
+            <h5 style="text-align: center;">Our Brands</h5>
+            <p style="text-align: center;">Our brands are synonymous with quality and encompass an extensive range of value-added products that offer both convenience and reliability. Although the range is constantly evolving and leading the way in innovation.</p>
+            <button class="btn btn-primary">Discover More</button>
+        </div>
+        <div class="card mt-5 p-3 m-2 col-xxl-3 col-xl-3 col-lg-5 col-md-5 col-sm-12">
+          <img src="Images\13.jpg" alt="">
+          <h5 style="text-align: center;">Our Team</h5>
+          <p style="text-align: center;">Our people are our greatest asset, so our Leadership Team works hard to create a great work environment that fosters loyalty and team work.RFS helps you focus on your core business by offering services in catering, housekeeping.</p>
+          <button class="btn btn-primary">Discover More</button>
+      </div>
+        
+    </div>
+  </div>
+
+
+  <div class="container-fluid mt-3 ">
+    <div class="row2 d-flex flex-wrap gap-4  justify-content-center">
+      <div class="text-center col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 mt-3 mb-3">
+           <img src="Images\1.png" alt="">
+           <p>Food Happiness Start Here</p>
+      </div>
+      <div class="text-center col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 mt-3 mb-3">
+        <h3 class="text-warning text-wrap text-uppercase border-bottom">links</h3>
+        <ul class="list-unstyled list-inline ">
+            <li class="p-2 "><a href="Terms & Conditions.html">Terms & Conditions</a></li>
+            <li class="p-2"><a href="About Us.html">About Us</a></li>
+            <li class="p-2"><a href="Contact Us.html">Contact Us</a></li>
+            <li class="p-2"><a href="Food Solution.html">Food Solution</a></li>
+         
+        </ul>
+     </div>
+
+     <div class="text-center col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 ">
+        <h3 class="text-warning text-wrap text-uppercase mt-3 border-bottom">social media </h3>
+        <ul class="list-unstyled list-inline d-inline-flex m-3">
+            <p class="p-2">
+              <a href="https://www.twitter.com/"><i class="bi bi-twitter-x"></i></a>
+            </p>
+            <p class="p-2">
+              <a href="https://www.youtube.com/"><i class="bi bi-play-btn-fill"></i></a>
+            </p>
+            <p class="p-2"> 
+              <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+            </p>
+            <p class="p-2">
+              <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+            </p>
+        </ul>
+     </div>
+    
+    </div>
+ </div>
+
+  <div class="container-fluid">
+    <div class="row3 mt-3">
+      <div  class="text-center">COPYRIGHT 2024 ©. All Rights Reserved.</div>
+      <div><marquee behavior="" direction="right">Cookies Policy Your Privacy Choices (U.S. residents)</marquee></div>
+    </div>
+  </div>
+</body>
+</html>
